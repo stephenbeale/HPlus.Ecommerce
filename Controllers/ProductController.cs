@@ -16,10 +16,21 @@ namespace HPlus.Ecommerce.Controllers
             return View();
         }
 
-        [RoutePrefix("list")]
+        //Allows you to override default names if needed (here it's redundant but just as an example)
+        [Route("list")]
         public ActionResult List()
         {
             return View();
+        }
+
+        //Example of advanced attribute routing e.g. custom parameters
+
+        [Route("product/{productName}")]
+        public ActionResult Detail(string productName)
+        {
+            //lookup the product name in the database
+            return View();
+
         }
     }
 }
