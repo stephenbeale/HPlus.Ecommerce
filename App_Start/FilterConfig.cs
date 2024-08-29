@@ -8,8 +8,8 @@ namespace HPlus.Ecommerce
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            //Built-in exception filter
-            filters.Add(new HandleErrorAttribute());
+            //Changed this to my own custom one
+            filters.Add(new CustomExceptionHandler());
             //My custom filter
             filters.Add(new LogRequestFilter());
         }
