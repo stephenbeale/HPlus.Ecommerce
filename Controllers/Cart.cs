@@ -2,8 +2,9 @@
 
 namespace HPlus.Ecommerce.Controllers
 {
-    public class HomeController : Controller
+    public class CartController : Controller
     {
+        // GET: Product
         public ActionResult Index()
         {
             return View();

@@ -6,11 +6,9 @@ using System.Web.Mvc;
 
 namespace HPlus.Ecommerce.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
-        // GET: Account
-        //Must check user is validated before proceeding
-        [Authorize]
         public ActionResult Index()
         {
             return View();
