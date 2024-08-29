@@ -9,7 +9,7 @@ namespace HPlus.Ecommerce.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            throw new System.Exception();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using HPlus.Ecommerce.Filters;
+
+using System.Web.Mvc;
 
 namespace HPlus.Ecommerce
 {
@@ -6,7 +8,10 @@ namespace HPlus.Ecommerce
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
+            //Built-in exception filter
             filters.Add(new HandleErrorAttribute());
+            //My custom filter
+            filters.Add(new LogRequestFilter());
         }
     }
 }
