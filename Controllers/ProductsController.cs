@@ -11,7 +11,6 @@ namespace HPlus.Ecommerce.Controllers
         // GET: Products
         public ActionResult Index()
         {
-            //redirects user from /products to /product list page as a result of this
             return RedirectToAction("Index", "Product");
         }
     }
